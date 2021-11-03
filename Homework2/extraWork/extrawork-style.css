@@ -1,0 +1,61 @@
+body {
+  background-color: #fdfff5;
+  padding: 3% 20%;
+}
+
+aside {
+  padding: 3% 3% 0 0;
+}
+main {
+  max-width: 70%;
+  border-left: solid #cccccc 1px;
+  padding: 3% 0 0 2%;
+}
+
+aside,
+main {
+  float: left;
+}
+
+aside > nav > a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+table {
+  text-align: left;
+}
+
+tr:nth-child(2n) {
+  line-height: 1.5;
+}
+
+#blue {
+  color: blue;
+}
+
+.profilePhoto {
+  border-radius: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 821px) {
+  main {
+    padding: 3% 0 0 4%;
+    max-width: 100%;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (min-width: 822px) and (max-width: 1140px) {
+  main {
+    max-width: 60%;
+  }
+}

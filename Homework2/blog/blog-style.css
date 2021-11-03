@@ -1,0 +1,45 @@
+.container {
+  margin: 2% 15%;
+  line-height: 1.5;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #4b3c3c;
+  font-weight: bold;
+}
+
+.menu span {
+  float: right;
+}
+
+.menu span > a {
+  margin-left: 10px;
+}
+
+.separator {
+  background-color: #4b3c3c;
+  height: 2px;
+  clear: both;
+}
+
+.author {
+  color: #6c6c6c;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+@media screen and (max-width: 459px) {
+  #logo {
+    width: 100%;
+    float: left;
+  }
+  .menu span {
+    float: left;
+  }
+  .menu span > a:first-child {
+    margin-left: 0;
+  }
+}
