@@ -1,27 +1,27 @@
-.container {
-  margin: 2% 15%;
-  line-height: 1.5;
-  font-family: "Times New Roman", Times, serif;
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #4b3c3c solid 2px;
+  padding: 1% 0;
 }
 
-.menu a {
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav > a,
+#logo > a {
   text-decoration: none;
   color: #4b3c3c;
   font-weight: bold;
 }
 
-.menu span {
-  float: right;
-}
-
-.menu span > a {
-  margin-left: 10px;
-}
-
-.separator {
-  background-color: #4b3c3c;
-  height: 2px;
-  clear: both;
+.container {
+  margin: 2% 20%;
+  line-height: 1.5;
 }
 
 .author {
@@ -31,15 +31,16 @@
   font-style: italic;
 }
 
-@media screen and (max-width: 459px) {
-  #logo {
-    width: 100%;
-    float: left;
+@media screen and (max-width: 354px) {
+  nav {
+    flex-direction: column;
+    gap: 1px;
   }
-  .menu span {
-    float: left;
-  }
-  .menu span > a:first-child {
-    margin-left: 0;
+}
+
+@media screen and (min-width: 355px) and (max-width: 400px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
