@@ -1,0 +1,82 @@
+.containter {
+  display: flex;
+  justify-content: center;
+  font-family: "muli-semibold", sans-serif;
+}
+
+.productBox {
+  width: 400px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.productBox > div {
+  display: flex;
+  justify-content: center;
+}
+
+.productBox img {
+  width: 99%;
+}
+
+.productBox h2 {
+  font-weight: 500;
+  font-size: 22px;
+  padding: 11px 0 5px 0;
+  text-align: center;
+}
+
+.review {
+  gap: 20px;
+  color: #808080;
+  font-size: 0.9em;
+}
+
+.star > i {
+  color: #f69c2d;
+}
+
+.heart > i {
+  color: #e9ecef;
+}
+
+i.red {
+  color: #ef3c36;
+}
+
+.description {
+  text-align: center;
+  color: #808080;
+  padding: 5px 40px 10px 40px;
+  font-size: 0.9em;
+  line-height: 1.3em;
+}
+
+.cart,
+.view {
+  border: #000000 solid 3px;
+  padding: 2% 5%;
+}
+.cart {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.buttons {
+  gap: 10px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.8em;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 750px) {
+  .containter {
+    flex-wrap: wrap;
+  }
+}
