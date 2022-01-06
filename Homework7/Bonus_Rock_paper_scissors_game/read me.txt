@@ -1,0 +1,20 @@
+------ Rock, Paper, Scissors - Game ------
+------------------------------------------
+
+Rules:
+
+- User Vs Robot: each one will choose a sign to score points
+- The game has 3 rounds, whoever wins a round gets a point and if it's a draw no one gets points
+- Options that can be chosen: Rock, Paper, Scissors
+- At each round the user can choose any option wants from the list above and 
+  the robot will get randomly one of those 3 options
+
+Duels for gaining points:
+
+Rock VS Paper     --> Paper wins
+Rock VS Scissors  --> Rock wins
+Paper VS Scissors --> Scissors wins
+
+At the end of 3 rounds
+- whoever has 2 or 3 points wins
+- if both user and robot has the same number of points then it's a draw

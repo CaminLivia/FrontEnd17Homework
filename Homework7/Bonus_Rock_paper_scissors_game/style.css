@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.results {
+  background-color: #f4f4f4;
+  border: #e2e2e2 1px solid;
+  padding: 2%;
+  margin-top: 2%;
+}
+
+#send {
+  background-color: #114f8a;
+  color: white;
+  padding: 10px 20px;
+  border: rgb(77, 76, 76) 1px solid;
+  margin-top: 20px;
+}
+
+#restart {
+  background-color: #f4f4f4;
+  padding: 10px 20px;
+  border: rgb(29, 29, 29) 1px solid;
+  margin-top: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input + label {
+  cursor: pointer;
+  padding: 5px 10px;
+}
+input:checked + label {
+  background: red;
+}

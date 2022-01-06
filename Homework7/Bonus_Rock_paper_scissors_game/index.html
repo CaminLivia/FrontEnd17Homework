@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors - Game</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h2>Rock, Paper, Scissors - Game</h2>
+        <h3>Choose an option</h3>
+      </div>
+      <div>
+        <form onsubmit="return gamePlay()">
+          <input type="radio" name="option" id="rock" value="Rock" required />
+          <label for="rock"><img src="./images/rock.png" alt="Rock" /></label>
+          <input type="radio" name="option" id="scissors" value="Scissors" />
+          <label for="scissors"
+            ><img src="./images/scissors.png" alt="Scissors"
+          /></label>
+          <input type="radio" name="option" id="paper" value="Paper" />
+          <label for="paper"
+            ><img src="./images/paper.png" alt="Paper"
+          /></label>
+          <div><input type="submit" id="send" value="Send my option" /></div>
+        </form>
+      </div>
+      <button id="restart" onclick="location.reload();">Restart game!</button>
+
+      <div class="results">
+        <div class="rounds"></div>
+        <div id="score">Good luck!</div>
+        <div id="end"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
