@@ -16,11 +16,22 @@ body {
   height: 100vh;
 }
 
+.bannerProject {
+  background-image: url("../images/template-1920.png");
+  background-size: cover;
+  background-position-x: bottom;
+  height: 120vh;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1% 5%;
+}
+
+.bg-project {
+  background-color: rgba(0, 0, 0, 0.39);
 }
 
 .logo {
